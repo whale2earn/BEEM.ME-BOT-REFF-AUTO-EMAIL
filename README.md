@@ -19,7 +19,7 @@ Bot untuk otomatisasi pendaftaran akun Beem.me, lengkap dengan login dan update 
 
 1.  Clone repositori ini ke komputer Anda:
     ```bash
-    git clone https://github.com/whale2earn/BEEM.ME-BOT-REFF-AUTO-EMAIL.git
+    git clone https://github.com/whale2learn/BEEM.ME-BOT-REFF-AUTO-EMAIL.git
     ```
 
 2.  Masuk ke direktori proyek:
@@ -33,11 +33,6 @@ Bot untuk otomatisasi pendaftaran akun Beem.me, lengkap dengan login dan update 
     ```
     *(Kita menggunakan versi spesifik seperti `node-fetch@2` dan `chalk@4` untuk memastikan kompatibilitas skrip)*
 
-4.  Runing the Bot :
-    ```bash
-    node index.js 
-    ```
-
 ---
 
 ## Configuration
@@ -50,7 +45,6 @@ Buka file `index.js` dan cari bagian `IMAP_CONFIGS`. Ganti dengan daftar email A
 
 **PENTING:** Skrip ini **TIDAK** membaca atau login ke email Anda. Skrip ini hanya menggunakan daftar email Anda untuk **mengambil nama domain** (seperti `@gmail.com` atau `@yahoo.com`) yang akan dipakai untuk membuat email baru secara acak (misal: `saga12345@gmail.com`).
 
-
 Ganti bagian ini:
 
 ```javascript
@@ -59,8 +53,7 @@ const IMAP_CONFIGS = [
     { user: 'javajabascript@gmail.com', password: 'password_asal' },
     { user: 'kitty2009@gmail.com', password: 'password_asal' },
 ];
-
-proxies.txt (Optional)
+2. proxies.txt (Optional)
 Jika Anda ingin menggunakan proxy, buat file proxies.txt di folder yang sama dengan index.js.
 
 Skrip ini mendukung mode Acak (memilih proxy acak setiap mendaftar) dan Berurutan.
@@ -71,6 +64,23 @@ Format yang didukung: http, socks4, socks5, dengan atau tanpa user:password.
 
 Contoh isi proxies.txt:
 
-[http://username:password@123.45.67.89:8080](http://username:password@123.45.67.89:8080)
+http://username:password@123.45.67.89:8080
 socks5://123.45.67.90:1080
-[http://123.45.67.91:999](http://123.45.67.91:999)
+http://123.45.67.91:999
+Running the Bot
+Setelah konfigurasi selesai, jalankan bot dengan perintah berikut:
+
+Bash
+
+node index.js
+Bot akan mengajukan beberapa pertanyaan di terminal:
+
+[?] Masukkan Invite Key Beem Anda: (Masukkan kode referral Anda)
+
+[?] Berapa akun yang ingin dibuat? (Masukkan jumlah, misal: 10)
+
+[?] Pilih mode proxy: (Pilih 1, 2, atau 3 jika tidak pakai proxy)
+
+[?] Masukkan jeda waktu antar akun (detik): (Masukkan jeda, misal: 30 untuk 30 detik)
+
+Bot akan mulai bekerja dan menyimpan semua data akun (email, password, token, status) di file log_hasil.csv.
