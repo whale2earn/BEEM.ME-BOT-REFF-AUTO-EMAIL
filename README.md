@@ -19,7 +19,7 @@ Bot untuk otomatisasi pendaftaran akun Beem.me, lengkap dengan login dan update 
 
 1.  Clone repositori ini ke komputer Anda:
     ```bash
-    git clone [https://github.com/whale2earn/BEEM.ME-BOT-REFF-AUTO-EMAIL.git](https://github.com/whale2earn/BEEM.ME-BOT-REFF-AUTO-EMAIL.git)
+    git clone [https://github.com/whale2earn/BEEM.ME-BOT-REFF-AUTO-EMAIL.git]
     ```
 
 2.  Masuk ke direktori proyek:
