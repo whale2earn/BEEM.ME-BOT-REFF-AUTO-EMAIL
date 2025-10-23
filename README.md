@@ -53,6 +53,7 @@ const IMAP_CONFIGS = [
     { user: 'javajabascript@gmail.com', password: 'password_asal' },
     { user: 'kitty2009@gmail.com', password: 'password_asal' },
 ];
+
 2. proxies.txt (Optional)
 Jika Anda ingin menggunakan proxy, buat file proxies.txt di folder yang sama dengan index.js.
 
