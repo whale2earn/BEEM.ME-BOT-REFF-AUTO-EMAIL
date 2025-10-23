@@ -1,0 +1,8 @@
+# Folder modul Node.js (tidak perlu di-upload)
+node_modules/
+
+# File log berisi data akun (SANGAT PENTING)
+log_hasil.csv
+
+# File proxy pribadi Anda
+proxies.txt
