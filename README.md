@@ -59,3 +59,18 @@ const IMAP_CONFIGS = [
     { user: 'javajabascript@gmail.com', password: 'password_asal' },
     { user: 'kitty2009@gmail.com', password: 'password_asal' },
 ];
+
+proxies.txt (Optional)
+Jika Anda ingin menggunakan proxy, buat file proxies.txt di folder yang sama dengan index.js.
+
+Skrip ini mendukung mode Acak (memilih proxy acak setiap mendaftar) dan Berurutan.
+
+Masukkan satu proxy per baris.
+
+Format yang didukung: http, socks4, socks5, dengan atau tanpa user:password.
+
+Contoh isi proxies.txt:
+
+[http://username:password@123.45.67.89:8080](http://username:password@123.45.67.89:8080)
+socks5://123.45.67.90:1080
+[http://123.45.67.91:999](http://123.45.67.91:999)
